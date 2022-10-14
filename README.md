@@ -2,8 +2,8 @@
 
 https://stevenwpaugh.github.io/camping/
 
-{% assign boxes = site.supplies %}
-List of All Boxes:
+{% assign boxes = site.data.supplies %}
+List of all boxes:
 
     {{ boxes }}
 

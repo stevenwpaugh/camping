@@ -2,8 +2,9 @@
 
 https://stevenwpaugh.github.io/camping/
 
-{% assign boxes = site.data.supplies %}
+
 List of all boxes:
-
-    {{ boxes }}
-
+{% assign bins = site.data.supplies | map: 'Bin' | join: ','  | split: ',' | uniq %}
+{% for bin in bins %}
+    {{ bin }}
+{% endfor %}
